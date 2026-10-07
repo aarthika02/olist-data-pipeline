@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Fact table containing order level revenue and metrics."
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null

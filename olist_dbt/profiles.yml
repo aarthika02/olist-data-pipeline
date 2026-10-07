@@ -1,0 +1,7 @@
+olist_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "/workspaces/olist-data-pipeline/olist_warehouse.db"
+      schema: main
